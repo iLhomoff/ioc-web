@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link  rel="icon" href="../media/search">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #e84118;    
+        }
+        .search-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2f3648;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .search-btn{
+            color: #e84118;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #2f3648;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-box:hover > .search-txt   {
+            width: 240px;
+            padding: 0 6px;
+
+        }
+        .search-txt{
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: white;
+            font-size: 16px;
+            transition: 0.8s;
+            line-height: 40px;
+            width: 0px;
+        }
+        i{
+            position: absolute;
+            margin-top: 2vh;
+            margin-left: 2vh;
+        }
+        ::placeholder{
+           
+            font-family: monospace;
+            margin-left: 5vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Type to Search">
+        <a class="search-btn" href="">
+            <i class="fas fa-search"></i>
+
+        </a>
+    </div>
+</body>
+</html>
